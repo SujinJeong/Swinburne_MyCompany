@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>PHP - MySQL Select (Check - Display) Template</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<!-- other meta here -->
+</head>
+<body>
+<header>
+	<h1>It Support Specialist</h1>
+	<h2 id="note">Please change the settings.php to your own username and password</h2>
+</header><nav>
+	<a href="index.php" class="menu">Index</a>
+	<a href="jobs.php" class="menu">Jobs</a>
+	<a href="apply.php" class="menu">Apply</a>
+	<a href="about.php" class="menu">About</a>
+	<a href="enhancements.php" class="menu">Enhancements</a>
+	<a href="enhancements2.php" class="menu">Enhancements2</a>
+</nav><h2> Job Application Table-ALL RECORDS</h2>
+<table><tr><th>ID</th><th>Job Ref</th><th>First Name</th><th>Last Name</th><th>Gender</th><th>Street Address</th><th>Suburb/Town</th><th>State</th><th>Post Code</th><th>Email Address</th><th>Phone Number</th><th>DOB</th><th>Skills</th><th>Other skills</th><th>Application Date</th><th>Status</th><th>Change Status</th></tr><tr><td>1</td><td>IT001</td><td>Sujin</td><td>Jeng</td><td>Female</td><td>24 wakefield street</td><td>Hawthorn</td><td>VIC</td><td>3122</td><td>dddd@naver.com</td><td>4123123123</td><td>1995-05-16</td><td>skill1,skill2,skill3,</td><td></td><td>2019-05-30</td><td>new</td><td><a href='new.php?id=1'>New</a>
+								<a href='current.php?id=1'>Current</a>
+								<a href='final.php?id=1'>Final</a></td><tr><td>2</td><td>IT001</td><td>Sujin</td><td>Jeng</td><td>Female</td><td>24 wakefield street</td><td>Hawthorn</td><td>VIC</td><td>3122</td><td>dddd@naver.com</td><td>4123123123</td><td>1995-05-16</td><td>skill1,skill2,skill3,  </td><td></td><td>2019-05-30</td><td>new</td><td><a href='new.php?id=2'>New</a>
+								<a href='current.php?id=2'>Current</a>
+								<a href='final.php?id=2'>Final</a></td><tr><td>3</td><td>IT001</td><td>Sujin</td><td>Jeng</td><td>Female</td><td>24 wakefield street</td><td>Hawthorn</td><td>VIC</td><td>3122</td><td>dddd@naver.com</td><td>4123123123</td><td>1995-05-16</td><td>skill1,skill2,skill3</td><td></td><td>2019-05-30</td><td>current</td><td><a href='new.php?id=3'>New</a>
+								<a href='current.php?id=3'>Current</a>
+								<a href='final.php?id=3'>Final</a></td><tr><td>4</td><td>IT001</td><td>Sujin</td><td>Jeng</td><td>Female</td><td>24 wakefield street</td><td>Hawthorn</td><td>VIC</td><td>3122</td><td>dddd@naver.com</td><td>4123123123</td><td>1995-05-16</td><td>skill1,skill2,skill3</td><td>My skill</td><td>2019-05-30</td><td>new</td><td><a href='new.php?id=4'>New</a>
+								<a href='current.php?id=4'>Current</a>
+								<a href='final.php?id=4'>Final</a></td><tr><td>5</td><td>IT001</td><td>Su</td><td>J</td><td>Female</td><td>24 wakefield street</td><td>Hawthorn</td><td>VIC</td><td>3122</td><td>dddd@naver.com</td><td>4123123123</td><td>1995-05-16</td><td>skill1,skill2,skill3</td><td>My skill</td><td>2019-05-30</td><td>new</td><td><a href='new.php?id=5'>New</a>
+								<a href='current.php?id=5'>Current</a>
+								<a href='final.php?id=5'>Final</a></td></table>	
+<h2>Search by Name</h2>
+	<form action="search_by_name.php" method="post">
+		<p><label>First Name: <input type="text" name="fn" /></label></p>    
+		<p><label>Last Name: <input type="text" name="ln" /></label></p>     
+		<input type="submit" value="Search" />
+	</form>
+	
+<h2>Search by Job reference number</h2>
+	<form action="search_by_jobref.php" method="post">
+		<p><label>Job reference number: <input type="text" name="jobref" /></label></p>    
+		<input type="submit" value="Search" />
+	</form>
+
+<h2>Delete based on job reference number:</h2>	
+	<form action="delete.php" method="post">
+		<p><label>Job Ref: <input type="text" name="jobref" /></label></p>    
+		<input type="submit" value="Delete" />
+	</form>
+</body>
+</html>

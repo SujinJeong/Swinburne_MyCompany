@@ -1,0 +1,106 @@
+/*
+filename: Jeong Sujin
+author: Jeong Sujin
+created: 03/04/19
+last modified: 04/04/19
+description: Assign1 - Make Job homepage
+*/
+
+span {color:red;}
+.menu {display:inline-block;
+		background-color:yellow;
+		font-size:3em;}
+body {font-family:arial;}
+nav a {
+	display: block;
+	list-style: none;
+	font-weight: bold;
+	padding: 0.5em 0.3em; /*10px 15px*/
+	text-decoration: none;
+	color:#000;
+	border-right:1px solid #bababa;
+	font-size: 53%;
+}
+p:first-letter {font-size:130%;}
+#tables2 {background-color:#C0C0C0;
+}
+#tables1 {background-color:lightgray;}
+#job-section1, #job-section2 {
+	float: left;
+	width:30%;
+	text-align:justify;
+	margin:1em 1em 1em 1em;
+}
+#about_img1 {
+	float:left;
+	width:300px;
+	height:400px;
+	border:1px inset red;
+}
+#about_img2 {width:30%;
+height:40%;
+border:2px inset red;
+}
+
+	#about_sec2 {
+		clear:both;
+	}
+  #index_article {
+	  background-image:url(images/backgroundimage.jpg);
+	  background-repeat:repeat;
+  }
+  #job_h1, #job_h2 {font-variant:initial;
+	  font-size:1.3em;
+	  font-family: arial;
+	  }
+	  #enhance_sec img {
+		  width:150px;
+		  height:150px;
+	  }
+  aside {
+		width:25%;
+	    float:right;
+		border:4px inset red;
+		border-radius: 10px;
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+	#job_footer {
+		font-size:small;
+		width:100%;
+		text-align:center;
+	}
+	aside:hover{display:block;}
+
+	dt {font-size:1.5em;
+		background-color:lightgreen;
+		text-align:left;}
+	dl {font-size:1em;
+		margin:0.7em;
+		padding:0.7em;
+		text-align:right;
+		width:40%;
+		float:left}
+	table, th, td { border: 2px solid black;	}
+	th {font-weight:bold;}
+	#table2 th, #tables2 td {width:150px;
+	height:100px;
+	text-align:center;}
+	#about_sec table {text-align:center;}
+	#about_sec2 h2 {color:green;
+					 font-size:2em; font-weight:bold; 
+	}
+	h2, h3 {background-color:brown;
+	color:white;}
+	footer{clear:both;}
+	
+	/* Responsive */
+	@media screen and (min-width: 40.5em) {
+		h1 {
+			color: gray;
+		}
+		img {width: 50%;
+			float: left;
+    		}
+	}
+
